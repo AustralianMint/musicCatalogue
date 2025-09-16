@@ -44,6 +44,7 @@ h3::after {
 
 nav {
     border-top: 2px solid;
+    border-bottom: 2px solid;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -69,8 +70,8 @@ footer {
 section {
     display: flex;
     flex-wrap: wrap; 
-    justify-content: center;
-    gap: 3%;
+    justify-content: space-evenly;
+    gap: 2%;
     padding: 20px;
 }
 
@@ -81,18 +82,84 @@ main > h2 {
     background: linear-gradient(to bottom, #95a5a6, #7086a8);
     position: sticky;
     top: 123px;
-    z-index: 9;
-    
+    z-index: 9; 
 }
 
-iframe {}
-
-#footer-links {
-    margin-top: 1rem;
+img {
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: 1s;
+    margin: 2rem;
 }
 
-.individual-song {
-    border: 2px solid red;
+img:hover {
+    transform: scale(1.02);
+}
+
+figcaption {
+    border: 2px solid;
+}
+
+/*------ Banger Section ------*/
+
+.banger-iframe {
+    border-radius: 50px 50px 1px 1px;
+}
+
+.banger-individual-song {
+    border: 1px solid grey;
+    border-radius: 50px;
+    background-color: #ccc5b9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    margin: 20px;
+    min-width: 0;
+}
+
+.banger-individual-song > p {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+/*------ Playlist Section ------*/
+
+.playlist-iframe {
+    border-radius: 50px 50px 1px 1px;
+}
+
+.playlist-individual-song {
+    border: 1px solid grey;
+    border-radius: 50px;
+    background-color: #ccc5b9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    margin: 20px;
+    min-width: 0;
+}
+
+.playlist-individual-song > p {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+/*------ Yearly Section ------*/
+
+.yearly-individual-song {
+    border: 1px solid grey;
     border-radius: 50px;
     background-color: #ccc5b9;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -100,19 +167,26 @@ iframe {}
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
     margin-bottom: 20px;
     min-width: 0;    
 }
 
-.individual-song > p {
-    border: 2px solid;
+.yearly-individual-song > p {
+    /* border: 2px solid; */
     margin: 0.5rem;
+    padding-bottom: 1rem;
     width: 100%;
     text-align: center;
 }
 
+
+/*------ SoundCloud Attribution ------*/
+
 .song-credits {
+    /* border: 2px solid red; */
     font-size: 10px;
     color: #cccccc;
     line-break: anywhere;
@@ -122,4 +196,30 @@ iframe {}
     text-overflow: ellipsis;
     font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
     font-weight: 100;
+}
+
+
+/*------ Spotify Section ------*/
+
+.spotify-playlist-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-left: 2rem; */
+}
+
+.spotify-playlist-description {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+}
+
+.spotify-playlist-description p {
+    margin-top: 1rem;
+}
+
+/*------ Footer section ------*/
+
+#footer-links {
+    margin-top: 1rem;
 }
