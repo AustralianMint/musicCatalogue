@@ -104,6 +104,33 @@ figcaption {
     border: 2px solid;
 }
 
+
+/*------ Weekly Changing Banger Section -------*/
+
+.heater-iframe {
+    border-radius: 50px 50px 1px 1px;
+}
+
+.weekly-heater-individual-song {
+    border: 1px solid grey;
+    border-radius: 50px;
+    background-color: #ccc5b9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    margin: 20px;
+    min-width: 0;
+}
+
+.weekly-heater-individual-song > p {
+    text-align: center;
+    margin: 0.5rem;
+}
+
 /*------ Banger Section ------*/
 
 .banger-iframe {
