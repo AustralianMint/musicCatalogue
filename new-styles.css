@@ -75,7 +75,7 @@ section {
     padding: 20px;
 }
 
-main > h2 {
+.music-content > h2 {
     text-align: center;
     border: 2px solid; 
     padding: 1rem;
@@ -213,9 +213,8 @@ figcaption {
 /*------ SoundCloud Attribution ------*/
 
 .song-credits {
-    /* border: 2px solid red; */
     font-size: 10px;
-    color: #cccccc;
+    color: #666;
     line-break: anywhere;
     word-break: normal;
     overflow: hidden;
@@ -243,6 +242,91 @@ figcaption {
 
 .spotify-playlist-description p {
     margin-top: 1rem;
+}
+
+
+/*------ Cookies Section ------*/
+
+.consent-banner {
+    background: #2a2a2a;
+    color: white;
+    border: 2px solid #58cf39;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 151px;
+    z-index: 100;
+}
+
+.consent-banner h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.consent-buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-accept {
+    background: #666;
+    color: white;
+}
+
+.btn-accept:hover {
+    background: #555;
+}
+
+.btn-decline {
+    background: #666;
+    color: white;
+}
+
+.btn-decline:hover {
+    background: #555;
+}
+
+.music-content {
+    opacity: 0.3;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.music-content.loaded {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.no-tracking-message {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ccc;
+    display: none;
+    border-left: 4px solid #ff6b6b;
+} */
+
+/* .placeholder-embed {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #58cf39;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
 /*------ Footer section ------*/
