@@ -254,6 +254,9 @@ figcaption {
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     position: sticky;
     top: 151px;
